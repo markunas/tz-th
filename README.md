@@ -52,7 +52,7 @@ The model is always trained on all provided data, but you can predict on a subse
 ### Testing
 * Run requested "Ireland 5 overs" test from the take-home instructions: `docker-compose run --rm app sh -c "python run_cricket_pipeline.py --ireland-test"`
 * Run all Python unit tests: `docker-compose run --rm app sh -c "python -m unittest test_pipeline.TestPipelineMethods"`
-* Run specific unit tests: `python -m unittest test_pipeline.TestPipelineMethods.<name of test function>`
+* Run specific unit tests: `docker-compose run --rm app sh -c “python -m unittest test_pipeline.TestPipelineMethods.<name of test function>”`
 
 ### Data Ingestion
 * Ingests data with a new data folder path: `docker-compose run --rm app sh -c "python run_cricket_pipeline.py --ingest-data --data-folder-path './new_data_folder/'"`
