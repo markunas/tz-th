@@ -1,0 +1,7 @@
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - ./cricket_pipeline:/cricket_pipeline
+      - ./data:/data
